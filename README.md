@@ -42,5 +42,30 @@ Streaming pull parser (NkkinPullParser) for low-memory processing
 Automatic encoding detection + direct ParseFromUrlAsync
 No external dependencies (pure .NET)
 
+Quick Start
+
+
+using NkkinParser;
+
+// Full DOM from string
+var html = await File.ReadAllTextAsync("page.html");
+var parser = new HtmlParser(html);
+var document = parser.Parse();
+
+var links = document.QuerySelectorAll("a[href]");
+foreach (var link in links)
+    Console.WriteLine(link.Attributes.GetValue("href"));
+
+// Direct from URL (async, decompressed)
+var doc = await HtmlLoader.ParseFromUrlAsync("https://example.com");
+
+// Streaming low-memory parsing
+await foreach (var node in HtmlLoader.CreatePullParserFromUrlAsync("https://news.site"))
+{
+    if (node.CurrentNodeType == NodeType.Element && node.CurrentName.Equals("article"))
+        ProcessArticle(node);
+}
+
+parser.Dispose(); // Returns arena memory to pool
 
 
