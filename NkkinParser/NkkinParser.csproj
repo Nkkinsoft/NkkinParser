@@ -1,7 +1,64 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Package metadata -->
+    <PackageId>NkkinParser</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Nkkinsoft</Authors>
+    <Owners>Nkkinsoft</Owners>
+    <Description>Ultra-high-performance, near-zero-allocation HTML5-compliant tolerant parser for .NET 10. SIMD-accelerated and arena-backed, NkkinParser delivers industry-leading throughput and dramatically lower heap allocations compared to other .NET HTML parsers (e.g., AngleSharp, HtmlAgilityPack). Includes compiled selectors, streaming parsing, and BenchmarkDotNet benchmarks.</Description>
+    <PackageTags>html;parser;html5;dom;css;selector;simd;performance;zero-allocation;scraping</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Nkkinsoft/NkkinParser</PackageProjectUrl>
+    <PackageIcon Condition="Exists('logo.png')">logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Nkkinsoft/NkkinParser</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <!-- Packaging and symbols -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSource>true</IncludeSource>
+    <IncludeSymbolsForSingleFile>true</IncludeSymbolsForSingleFile>
+
+    <!-- SourceLink / debugging -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Deterministic>true</Deterministic>
+
+    <!-- Documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+
+    <!-- Other packaging tweaks -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.snupkg</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PublishLicenseFile>false</PublishLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="NkkinParser.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Include README and assets at package root (only if present) -->
+    <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\\README.md')" />
+    <None Include="..\nkkinsoft.png" Pack="true" PackagePath="\" Condition="Exists('..\\nkkinsoft.webP')" />
+    <!-- Project-local README and icon -->
+    <None Include="README.md" Pack="true" PackagePath="\" Condition="Exists('README.md')" />
+    <None Include="nkkinsoft.png" Pack="true" PackagePath="\" Condition="Exists('nkkinsoft.png')" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- SourceLink support -->
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
 </Project>
