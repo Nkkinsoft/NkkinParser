@@ -1,0 +1,21 @@
+  Identification des projets ├á restaurer...
+  Tous les projets sont ├á jour pour la restauration.
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Selectors\CompiledSelector.cs(14,17): warning CS8601: Existence possible d'une assignation de r├®f├®rence null. [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Selectors\CompiledSelector.cs(12,12): warning CS8618: Le champ ┬½┬á_root┬á┬╗ non-nullable doit contenir une valeur autre que Null lors de la fermeture du constructeur. Envisagez dÔÇÖajouter le modificateur ┬½┬árequired┬á┬╗ ou de d├®clarer le champ comme pouvant accepter la valeur Null. [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\HtmlParser.cs(130,32): warning CS0162: Code inaccessible d├®tect├® [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+  NkkinParser -> c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\bin\Debug\net10.0\NkkinParser.dll
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Benchmarks\Benchmarks\ParsingBenchmark.cs(17,22): warning CS0414: Le champ 'ParsingBenchmark._htmlFiles' est assign├®, mais sa valeur n'est jamais utilis├®e [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Benchmarks\NkkinParser.Benchmarks.csproj]
+  NkkinParser.Benchmarks -> c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Benchmarks\bin\Debug\net10.0\NkkinParser.Benchmarks.dll
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Tests\Tests\TokenizerTests.cs(13,31): error CS9244: Le type ┬½┬áHtmlToken┬á┬╗ ne peut pas ├¬tre un type struct ref ou un param├¿tre de type autorisant des ref structs afin de lÔÇÖutiliser comme param├¿tre ┬½┬áT┬á┬╗ dans le type ou la m├®thode g├®n├®rique ┬½┬áList<T>┬á┬╗ [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Tests\NkkinParser.Tests.csproj]
+
+├ëCHEC de la build.
+
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Selectors\CompiledSelector.cs(14,17): warning CS8601: Existence possible d'une assignation de r├®f├®rence null. [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Selectors\CompiledSelector.cs(12,12): warning CS8618: Le champ ┬½┬á_root┬á┬╗ non-nullable doit contenir une valeur autre que Null lors de la fermeture du constructeur. Envisagez dÔÇÖajouter le modificateur ┬½┬árequired┬á┬╗ ou de d├®clarer le champ comme pouvant accepter la valeur Null. [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\HtmlParser.cs(130,32): warning CS0162: Code inaccessible d├®tect├® [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Benchmarks\Benchmarks\ParsingBenchmark.cs(17,22): warning CS0414: Le champ 'ParsingBenchmark._htmlFiles' est assign├®, mais sa valeur n'est jamais utilis├®e [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Benchmarks\NkkinParser.Benchmarks.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Tests\Tests\TokenizerTests.cs(13,31): error CS9244: Le type ┬½┬áHtmlToken┬á┬╗ ne peut pas ├¬tre un type struct ref ou un param├¿tre de type autorisant des ref structs afin de lÔÇÖutiliser comme param├¿tre ┬½┬áT┬á┬╗ dans le type ou la m├®thode g├®n├®rique ┬½┬áList<T>┬á┬╗ [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Tests\NkkinParser.Tests.csproj]
+    4 Avertissement(s)
+    1 Erreur(s)
+
+Temps ├®coul├® 00:00:03.60

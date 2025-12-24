@@ -1,0 +1,16 @@
+  Identification des projets ├á restaurer...
+  Tous les projets sont ├á jour pour la restauration.
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\HtmlParser.cs(130,32): warning CS0162: Code inaccessible d├®tect├® [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Selectors\CompiledSelector.cs(40,17): warning CS8602: D├®r├®f├®rencement d'une ├®ventuelle r├®f├®rence null. [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+  NkkinParser -> c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\bin\Debug\net10.0\NkkinParser.dll
+  NkkinParser.Tests -> c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Tests\bin\Debug\net10.0\NkkinParser.Tests.dll
+  NkkinParser.Benchmarks -> c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser.Benchmarks\bin\Debug\net10.0\NkkinParser.Benchmarks.dll
+
+La g├®n├®ration a r├®ussi.
+
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\HtmlParser.cs(130,32): warning CS0162: Code inaccessible d├®tect├® [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Selectors\CompiledSelector.cs(40,17): warning CS8602: D├®r├®f├®rencement d'une ├®ventuelle r├®f├®rence null. [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+    2 Avertissement(s)
+    0 Erreur(s)
+
+Temps ├®coul├® 00:00:03.13

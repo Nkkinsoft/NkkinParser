@@ -1,0 +1,11 @@
+  Identification des projets ├á restaurer...
+  Tous les projets sont ├á jour pour la restauration.
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Node.cs(134,16): error CS0102: Le type 'AttributeCollection' contient d├®j├á une d├®finition pour 'Count' [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+
+├ëCHEC de la build.
+
+c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\Node.cs(134,16): error CS0102: Le type 'AttributeCollection' contient d├®j├á une d├®finition pour 'Count' [c:\Users\nkkinx\Downloads\NkkinParser\NkkinParser\NkkinParser.csproj]
+    0 Avertissement(s)
+    1 Erreur(s)
+
+Temps ├®coul├® 00:00:01.41

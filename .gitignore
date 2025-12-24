@@ -1,0 +1,36 @@
+# Visual Studio / Rider
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build / bin
+**/bin/
+**/obj/
+NkkinParser.Benchmarks/bin/
+NkkinParser.Benchmarks/obj/
+NkkinParser/bin/
+NkkinParser/obj/
+
+# Benchmark artifacts
+BenchmarkDotNet.Artifacts/
+
+# IDE backups / caches
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Logs
+*.log
+
+# Misc
+.coverage
+*.coverageresults
